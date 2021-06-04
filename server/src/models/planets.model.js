@@ -53,7 +53,11 @@ const result = await promise;
 console.log(result);
 */
 
+function getAllPlanets() {
+  return habitablePlanets;
+}
+
 module.exports = {
   loadPlanetsData,
-  planets: habitablePlanets,
+  getAllPlanets,
 };
