@@ -19,7 +19,7 @@ function httpAddNewLaunch(req, res) {
     !launch.target
   ) {
     return res.status(400).json({
-      error: "Mission required launch property",
+      error: "Missing required launch property",
     });
   }
   // it's best to modify strings to Date obj on the server-side
