@@ -19,7 +19,6 @@ const launchesSchema = new mongoose.Schema({
   },
   target: {
     type: String,
-    required: true,
   },
   customers: [String],
   upcoming: {
@@ -32,3 +31,6 @@ const launchesSchema = new mongoose.Schema({
     default: true,
   },
 });
+
+// Connects launchesSchema with the "launches" collection
+module.exports = mongoose.model("Launch", launchesSchema);
